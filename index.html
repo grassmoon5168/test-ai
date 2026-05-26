@@ -136,6 +136,14 @@
       height: 1px;
       width: 100%;
     }
+    .zoomable {
+      cursor: zoom-in;
+    }
+    .lightbox-backdrop {
+      background: rgba(7, 15, 28, 0.82);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+    }
   </style>
 </head>
 <body class="antialiased overflow-x-hidden">
@@ -293,6 +301,23 @@
       <!-- ABOUT -->
       <section id="about" class="py-24 sm:py-28 relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <article class="reveal glass-strong rounded-[2rem] p-5 sm:p-6 lg:p-8 shadow-soft gradient-border overflow-hidden mb-10">
+            <div class="grid lg:grid-cols-12 gap-6 items-center">
+              <div class="lg:col-span-5">
+                <img src="mywork/howard-headshot-01.jpg" alt="鍾皓軒 Howard 個人形象照" class="zoomable w-full max-w-md mx-auto lg:mx-0 aspect-[4/5] object-cover rounded-[1.5rem] border border-slate-200/70 shadow-soft" loading="lazy" />
+              </div>
+              <div class="lg:col-span-7">
+                <p class="text-brandBlue font-semibold tracking-wide uppercase text-xs">About Howard</p>
+                <h3 class="mt-3 text-3xl sm:text-4xl font-bold text-slate-950 leading-tight">讓技術、教學與商業成果在同一張地圖上對齊。</h3>
+                <p class="mt-4 text-slate-600 leading-8">聚焦企業 AI 導入與資料應用落地，將策略規劃、課程培訓與專案執行串成可持續運作的成長系統。這張照片區塊採獨立卡面設計，避免覆蓋任何文案，並在行動裝置維持清楚閱讀層次。</p>
+                <div class="mt-5 flex flex-wrap gap-2 text-xs">
+                  <span class="px-3 py-1 rounded-full bg-blue-50 text-brandBlue font-semibold">AI Transformation</span>
+                  <span class="px-3 py-1 rounded-full bg-purple-50 text-brandPurple font-semibold">Corporate Training</span>
+                  <span class="px-3 py-1 rounded-full bg-emerald-50 text-brandMint font-semibold">Project Execution</span>
+                </div>
+              </div>
+            </div>
+          </article>
           <div class="grid lg:grid-cols-12 gap-10 items-start">
             <div class="lg:col-span-5 reveal">
               <p class="text-brandBlue font-semibold tracking-wide uppercase text-xs">About</p>
@@ -522,6 +547,46 @@
         </div>
       </section>
 
+      <!-- MYWORK GALLERY -->
+      <section class="py-24 sm:py-28 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="reveal flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+            <div>
+              <p class="text-brandBlue font-semibold tracking-wide uppercase text-xs">Field Showcase</p>
+              <h2 class="mt-3 text-3xl sm:text-4xl font-bold text-slate-950">內訓與專案現場展演</h2>
+            </div>
+            <p class="text-slate-600 max-w-2xl leading-8">從企業內訓到產業舞台，這些場景呈現了方法落地、團隊共學與專案推進的真實節奏。</p>
+          </div>
+
+          <div class="mt-14 grid md:grid-cols-2 xl:grid-cols-3 gap-5">
+            <figure class="reveal glass-strong rounded-[1.6rem] p-3 shadow-soft gradient-border">
+              <img src="mywork/training-telecom-01.png" alt="台灣 Top3 電信業內訓課程現場" class="zoomable w-full h-64 object-cover rounded-2xl" loading="lazy" />
+              <figcaption class="px-1 pt-4 pb-2 text-sm text-slate-600">台灣 Top3 電信業：AI 內訓課程現場</figcaption>
+            </figure>
+            <figure class="reveal glass-strong rounded-[1.6rem] p-3 shadow-soft gradient-border">
+              <img src="mywork/training-itri-02.png" alt="工研院內訓與專案討論場景" class="zoomable w-full h-64 object-cover rounded-2xl" loading="lazy" />
+              <figcaption class="px-1 pt-4 pb-2 text-sm text-slate-600">工研院：AI 內訓與專案討論</figcaption>
+            </figure>
+            <figure class="reveal glass-strong rounded-[1.6rem] p-3 shadow-soft gradient-border">
+              <img src="mywork/training-iii-03.png" alt="資策會內訓授課現場" class="zoomable w-full h-64 object-cover rounded-2xl" loading="lazy" />
+              <figcaption class="px-1 pt-4 pb-2 text-sm text-slate-600">資策會：AI 內訓授課現場</figcaption>
+            </figure>
+            <figure class="reveal glass-strong rounded-[1.6rem] p-3 shadow-soft gradient-border md:col-span-2 xl:col-span-1">
+              <img src="mywork/training-airline-04.png" alt="台灣 Top3 航空業內訓現場" class="zoomable w-full h-64 object-cover rounded-2xl" loading="lazy" />
+              <figcaption class="px-1 pt-4 pb-2 text-sm text-slate-600">台灣 Top3 航空業：內訓課程落地</figcaption>
+            </figure>
+            <figure class="reveal glass-strong rounded-[1.6rem] p-3 shadow-soft gradient-border">
+              <img src="mywork/expo-nstc-01.jpg" alt="國科會專案展演舞台" class="zoomable w-full h-64 object-cover rounded-2xl" loading="lazy" />
+              <figcaption class="px-1 pt-4 pb-2 text-sm text-slate-600">國科會：專案展演與跨域交流</figcaption>
+            </figure>
+            <figure class="reveal glass-strong rounded-[1.6rem] p-3 shadow-soft gradient-border">
+              <img src="mywork/expo-icdesign-02.jpg" alt="台灣 Top3 IC 設計專案展演場景" class="zoomable w-full h-64 object-cover rounded-2xl" loading="lazy" />
+              <figcaption class="px-1 pt-4 pb-2 text-sm text-slate-600">台灣 Top3 IC 設計：舞台展演與成果分享</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
       <!-- PRODUCTS -->
       <section class="py-24 sm:py-28 bg-gradient-to-b from-slate-50/80 to-white relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -679,6 +744,15 @@
     </main>
   </div>
 
+  <div id="lightbox" class="fixed inset-0 z-[90] hidden lightbox-backdrop p-4 sm:p-8">
+    <button id="lightboxClose" type="button" class="absolute top-4 right-4 sm:top-6 sm:right-6 w-11 h-11 rounded-full bg-white/90 text-slate-900 grid place-items-center shadow-soft" aria-label="關閉圖片檢視">
+      <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+    </button>
+    <div class="w-full h-full grid place-items-center">
+      <img id="lightboxImage" src="" alt="放大檢視圖片" class="max-w-full max-h-full object-contain rounded-2xl shadow-glow" />
+    </div>
+  </div>
+
   <script>
     // Mobile menu
     const menuBtn = document.getElementById('menuBtn');
@@ -728,6 +802,41 @@
       }
     }
     setTimeout(typeLoop, 650);
+
+    // Global image lightbox
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImage = document.getElementById('lightboxImage');
+    const lightboxClose = document.getElementById('lightboxClose');
+
+    function openLightbox(src, alt) {
+      if (!lightbox || !lightboxImage) return;
+      lightboxImage.src = src;
+      lightboxImage.alt = alt || '放大檢視圖片';
+      lightbox.classList.remove('hidden');
+      document.body.classList.add('overflow-hidden');
+    }
+
+    function closeLightbox() {
+      if (!lightbox || !lightboxImage) return;
+      lightbox.classList.add('hidden');
+      lightboxImage.src = '';
+      document.body.classList.remove('overflow-hidden');
+    }
+
+    document.querySelectorAll('img.zoomable').forEach((img) => {
+      img.addEventListener('click', () => openLightbox(img.src, img.alt));
+    });
+
+    lightboxClose?.addEventListener('click', closeLightbox);
+    lightbox?.addEventListener('click', (e) => {
+      if (e.target === lightbox) closeLightbox();
+    });
+
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && lightbox && !lightbox.classList.contains('hidden')) {
+        closeLightbox();
+      }
+    });
   </script>
 </body>
 </html>
